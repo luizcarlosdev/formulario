@@ -44,9 +44,7 @@ div.caixa1 {
     position: relative;
 }
 
-div.caixa1-tudo{
-    
-}
+div.caixa1-tudo {}
 
 /* div.caixa1 header{
     position: absolute;
@@ -117,8 +115,6 @@ div.caixa1 div.corpo-form div.or {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 3px 6px;
 }
 
 div.caixa1 div.corpo-form div.or span {
@@ -126,30 +122,21 @@ div.caixa1 div.corpo-form div.or span {
 }
 
 
-div.caixa1 div.corpo-form div.or span::before {
-    position: absolute;
-    top: 50%;
+div.caixa1 div.corpo-form div.or::before {
     content: " ";
-    width: 143px;
-    height: 0.5px;
-    background-color: var(--color5);
-    transform: rotate(-180deg) translate(164px);
-    margin: 0px 6px;
-    margin-right: 4px;
+    flex: 1;
+    border: 1px solid #6d6e70;
+    margin-right: .5em;
 }
 
-div.caixa1 div.corpo-form div.or span::after {
-    position: absolute;
-    top: 50%;
+div.caixa1 div.corpo-form div.or::after {
     content: " ";
-    width: 160px;
-    height: 0.5px;
-    transform: translate(10px);
-    background-color: var(--color5);
-    margin: 0px 6px;
+    flex: 1;
+    border: 1px solid #6d6e70;
+    margin-left: .5em;
 }
 
-div.inputs-grupo{
+div.inputs-grupo {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 16px;
@@ -181,17 +168,17 @@ div.input-caixa div.input {
     background-color: #f1f1f1;
 }
 
-div.input-caixa div.input button{
+div.input-caixa div.input button {
     width: 40px;
     height: 100%;
     background-color: transparent;
 }
 
-div.input-caixa div.input i{
+div.input-caixa div.input i {
     font-size: 1.2rem;
 }
 
-div.input-caixa input:focus-visible ~ div.input{
+div.input-caixa input:focus-visible~div.input {
     border: 1px solid #000;
 }
 
@@ -202,7 +189,7 @@ div.input-caixa div.input input {
     outline: none;
 }
 
-div.caixa1 div.formulario-botao{
+div.caixa1 div.formulario-botao {
     width: 100%;
     padding: 6px 0px;
     display: grid;
@@ -210,7 +197,8 @@ div.caixa1 div.formulario-botao{
     place-items: center;
 }
 
-div.caixa1 div.formulario-botao input[type=button],input[type=submit]{
+div.caixa1 div.formulario-botao input[type=button],
+input[type=submit] {
     width: 100%;
     background-color: var(--color2);
     color: #fff;
@@ -221,7 +209,7 @@ div.caixa1 div.formulario-botao input[type=button],input[type=submit]{
     cursor: pointer;
 }
 
-div.caixa1 div.sem-conta{
+div.caixa1 div.sem-conta {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -230,7 +218,7 @@ div.caixa1 div.sem-conta{
     padding: 5px 0px;
 }
 
-div.caixa1 div.sem-conta a{
+div.caixa1 div.sem-conta a {
     color: var(--color4);
     font-weight: 600;
     margin: 0px 16px;
@@ -280,7 +268,7 @@ div.caixa2 div.conteudo div.avatar-foto img {
 }
 
 @media (max-width:760px) {
-    div.caixa1{
+    div.caixa1 {
         width: 100%;
         display: flex;
         align-items: center;
@@ -291,22 +279,22 @@ div.caixa2 div.conteudo div.avatar-foto img {
         display: none;
     }
 
-    div.caixa1 form{
+    div.caixa1 form {
         width: 80%;
         height: 100%;
     }
 
-    div.caixa1 div.corpo-form div.or{
-        width: 80%;
+    div.caixa1 div.corpo-form div.or {
+        width: 100%;
         padding: 15px;
     }
 
-    div.caixa1 div.corpo-form div.or span::after {
+    /* div.caixa1 div.corpo-form div.or span::after {
         width: 101px;
     }
 
-    div.caixa1 div.corpo-form div.or span::before{
+    div.caixa1 div.corpo-form div.or span::before {
         width: 100px;
         transform: rotate(-180deg) translate(119px);
-    }
+    } */
 }
