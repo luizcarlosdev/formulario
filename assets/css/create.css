@@ -62,7 +62,7 @@ div.caixa1 form {
     grid-template-columns: 1fr;
     place-items: left;
     place-content: center;
-    row-gap: 17px;
+    row-gap: 10px;
     width: 350px;
     padding: 0px 5px;
     overflow: hidden;
@@ -115,6 +115,7 @@ div.caixa1 div.corpo-form div.or {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px 0px;
 }
 
 div.caixa1 div.corpo-form div.or span {
